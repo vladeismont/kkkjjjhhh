@@ -324,7 +324,12 @@ ul {
     margin-left: 1.2rem !important; }
 
   .endtext {
-    margin: 1.6rem 0 1.6rem 1.2rem !important; } }
+    margin: 1.6rem 0 1.6rem 1.2rem !important; }
+
+  .decorativeUnderline {
+    width: 75% !important; }
+    .decorativeUnderline .container___3FzPz .color-textWhiteSoft {
+      width: 100% !important; } }
 @media (min-width: 898px) {
   .menu-list {
     display: flex !important;
@@ -381,7 +386,12 @@ ul {
     margin-left: 84.5px !important; }
 
   .endtext {
-    margin: 1.6rem 0 1.6rem 84.5px !important; } }
+    margin: 1.6rem 0 1.6rem 84.5px !important; }
+
+  .decorativeUnderline {
+    width: auto !important; }
+    .decorativeUnderline .container___3FzPz .color-textWhiteSoft {
+      width: auto !important; } }
 @media (min-width: 1024px) {
   .menu-list {
     display: flex !important;

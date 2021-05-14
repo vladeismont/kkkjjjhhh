@@ -406,6 +406,14 @@ ul{
   .endtext{
     margin: 1.6rem 0 1.6rem 1.2rem!important;
   }
+  .decorativeUnderline{
+    width: 75%!important;
+    .container___3FzPz{
+      .color-textWhiteSoft{
+        width: 100%!important;
+      }
+    }
+  }
 }
 
 @media (min-width: 898px) {
@@ -471,6 +479,14 @@ ul{
   .endtext{
     margin: 1.6rem 0 1.6rem 84.5px!important;
   }
+  .decorativeUnderline{
+    width: auto!important;
+    .container___3FzPz{
+      .color-textWhiteSoft{
+        width: auto!important;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -531,4 +547,11 @@ ul{
   .endtext{
     margin: 1.6rem 0 1.6rem 84.5px!important;
   }
+  .decorativeUnderline{
+    width: auto!important;
+    .container___3FzPz{
+      .color-textWhiteSoft{
+        width: auto!important;
+      }
+    }
 }
