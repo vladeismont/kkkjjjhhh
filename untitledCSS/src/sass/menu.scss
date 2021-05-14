@@ -130,25 +130,7 @@ ul{
 }
 
 .lstbar{
-  display: flex;
-  position: fixed;
-  background: lightgrey;
-  top: 101px;
-  height: 53px;
-  width: 100%;
-  font-size: 16px;
-  padding-left: 84.5px;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  .lstbar_li{
-    margin: 0 20px 0 0;
-  }
-  .lstbar_li:nth-child(1) .lstbar_li_a{
-    /*background: red;*/
-    padding-bottom: 5px;
-    border-bottom: 1.5px solid black;
-  }
+display: none;
 }
 
 .footer{
@@ -179,7 +161,7 @@ ul{
 }
 
 .page{
-  margin-top: 53px;
+  margin-top: 0!important;
   display: flex;
   flex-direction: column;
   .maincontent{
@@ -353,6 +335,9 @@ ul{
   .maincontent{
     margin: 1.2rem 0 0 0!important;
   }
+  .lstbar{
+    display: none;
+  }
   .leftblock{
     display: none!important;
   }
@@ -422,6 +407,29 @@ ul{
     justify-content: start!important;
     align-items: center!important;
   }
+  .lstbar{
+    background: lightgrey;
+    top: 101px;
+    height: 53px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 84.5px;
+    display: flex!important;
+    flex-direction: row!important;
+    align-items: center!important;
+    position: fixed!important;
+    .lstbar_li{
+      margin: 0 20px 0 0;
+    }
+    .lstbar_li:nth-child(1) .lstbar_li_a{
+      /*background: red;*/
+      padding-bottom: 5px;
+      border-bottom: 1.5px solid black;
+    }
+  }
+  .page{
+    margin-top: 53px!important;
+  }
   .sndnav{
     display: flex!important;
   }
@@ -490,68 +498,74 @@ ul{
 }
 
 @media (min-width: 1024px) {
-  .menu-list{
-    display: flex!important;
-    justify-content: start!important;
-    align-items: center!important;
+  .menu-list {
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center !important;
   }
-  .sndnav{
-    display: flex!important;
+  .sndnav {
+    display: flex !important;
   }
-  .maincontent{
-    margin: 0 0 0 84.5px!important;
+  .maincontent {
+    margin: 0 0 0 84.5px !important;
   }
-  .leftblock{
-    display: flex!important;
+  .leftblock {
+    display: flex !important;
   }
-  .rightblock{
-    padding-left: 101px!important;
-    padding-right: 10%!important;
+  .rightblock {
+    padding-left: 101px !important;
+    padding-right: 10% !important;
   }
-  #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
-    display: flex!important;
-    flex-direction: column!important;
+  #check1:checked ~ .blockabout_ul, #check2:checked ~ .blockabout_ul, #check3:checked ~ .blockabout_ul, #check4:checked ~ .blockabout_ul, #check5:checked ~ .blockabout_ul {
+    display: flex !important;
+    flex-direction: column !important;
   }
-  .decorativeUnderlinebottom{
-    flex-direction: row!important;
-    margin-left: 84.5px!important;
+  .decorativeUnderlinebottom {
+    flex-direction: row !important;
+    margin-left: 84.5px !important;
   }
 
-  .endlist{
-    flex-direction: row!important;
-    .endlist_li{
-      margin: 0!important;
-      .endlinks:hover{
-        text-decoration: underline!important;
+  .endlist {
+    flex-direction: row !important;
+
+    .endlist_li {
+      margin: 0 !important;
+
+      .endlinks:hover {
+        text-decoration: underline !important;
       }
     }
-    .endlist_li:first-child{
-      padding-right: 1.6rem!important;
+
+    .endlist_li:first-child {
+      padding-right: 1.6rem !important;
     }
-    .endlist_li:not(:first-child){
+
+    .endlist_li:not(:first-child) {
       border-left: 1px solid black !important;
       /*          background: red;*/
-      padding: 0 1.6rem!important;
+      padding: 0 1.6rem !important;
     }
   }
-  .blockabout_ul{
-    display: flex!important;
-    flex-direction: column!important;
+  .blockabout_ul {
+    display: flex !important;
+    flex-direction: column !important;
   }
-  .socials{
-    margin-left: 84.5px!important;
+  .socials {
+    margin-left: 84.5px !important;
   }
-  .endlist{
-    margin-left: 84.5px!important;
+  .endlist {
+    margin-left: 84.5px !important;
   }
-  .endtext{
-    margin: 1.6rem 0 1.6rem 84.5px!important;
+  .endtext {
+    margin: 1.6rem 0 1.6rem 84.5px !important;
   }
-  .decorativeUnderline{
-    width: auto!important;
-    .container___3FzPz{
-      .color-textWhiteSoft{
-        width: auto!important;
+  .decorativeUnderline {
+    width: auto !important;
+
+    .container___3FzPz {
+      .color-textWhiteSoft {
+        width: auto !important;
       }
     }
+  }
 }
