@@ -48,8 +48,6 @@ ul{
       /*background: yellowgreen;*/
       list-style: none;
       display: flex;
-      /*          font-size: 1.3rem;*/
-
       justify-content: start;
       align-items: center;
       .menu-list_li{
@@ -349,6 +347,9 @@ ul{
 
 
 @media (min-width: 400px) {
+  .menu-list,.sndnav{
+    display: none!important;
+  }
   .maincontent{
     margin: 1.2rem 0 0 0!important;
   }
@@ -356,7 +357,8 @@ ul{
     display: none!important;
   }
   .rightblock{
-    padding-left: 0!important;
+    padding-left: 1.2rem!important;
+    padding-right: 1.2rem!important;
   }
 
   #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
@@ -392,19 +394,38 @@ ul{
       text-decoration: none!important;
     }
   }
-
-
+  .decorativeUnderlinebottom {
+    margin-left: 16.5px!important;
+  }
+  .socials{
+    margin-left: 1.2rem!important;
+  }
+  .endlist{
+    margin-left: 1.2rem!important;
+  }
+  .endtext{
+    margin: 1.6rem 0 1.6rem 1.2rem!important;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 898px) {
+  .menu-list{
+    display: flex!important;
+    justify-content: start!important;
+    align-items: center!important;
+  }
+  .sndnav{
+    display: flex!important;
+  }
   .maincontent{
-    margin-left: 84.5px!important;
+    margin: 0 0 0 84.5px!important;
   }
   .leftblock{
     display: none!important;
   }
   .rightblock{
     padding-left: 0!important;
+    padding-right: 10%!important;
   }
 
   #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
@@ -413,6 +434,7 @@ ul{
   }
   .decorativeUnderlinebottom{
     flex-direction: column!important;
+    margin-left: 84.5px!important;
   }
   .blockaboutdiv{
     margin: 10px 0!important;
@@ -440,17 +462,35 @@ ul{
       text-decoration: none!important;
     }
   }
+  .socials{
+    margin-left: 84.5px!important;
+  }
+  .endlist{
+    margin-left: 84.5px!important;
+  }
+  .endtext{
+    margin: 1.6rem 0 1.6rem 84.5px!important;
+  }
 }
 
 @media (min-width: 1024px) {
+  .menu-list{
+    display: flex!important;
+    justify-content: start!important;
+    align-items: center!important;
+  }
+  .sndnav{
+    display: flex!important;
+  }
   .maincontent{
-    margin-left: 84.5px!important;
+    margin: 0 0 0 84.5px!important;
   }
   .leftblock{
     display: flex!important;
   }
   .rightblock{
     padding-left: 101px!important;
+    padding-right: 10%!important;
   }
   #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
     display: flex!important;
@@ -458,6 +498,7 @@ ul{
   }
   .decorativeUnderlinebottom{
     flex-direction: row!important;
+    margin-left: 84.5px!important;
   }
 
   .endlist{
@@ -480,5 +521,14 @@ ul{
   .blockabout_ul{
     display: flex!important;
     flex-direction: column!important;
+  }
+  .socials{
+    margin-left: 84.5px!important;
+  }
+  .endlist{
+    margin-left: 84.5px!important;
+  }
+  .endtext{
+    margin: 1.6rem 0 1.6rem 84.5px!important;
   }
 }
