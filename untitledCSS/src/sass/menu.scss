@@ -25,8 +25,8 @@ ul{
   flex-direction: column;
   top: 0;
   position: sticky;
+  box-shadow: 0 3px 2px -2px gray;
   .header__fstline{
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -105,7 +105,9 @@ ul{
         padding: 7px 16px;
         font-size: 1.3rem;
         line-height: .8;
+        margin: 0 12px 0 32px;
         /*transition: all .2s ease;*/
+
       }
       .join{
         background: #000;
@@ -119,16 +121,17 @@ ul{
         /*transition: all .2s ease;*/
       }
       .btnsign{
-        margin: 0 12px 0 42px;
+
       }
       .btnsign:hover,.join:hover{
         background: mediumslateblue;
       }
     }
   }
-
 }
-
+#checkburger{
+  display: none;
+}
 .lstbar{
 display: none;
 }
@@ -292,9 +295,13 @@ display: none;
         height: 32px;
         overflow: visible;
         fill: currentcolor;
-        /*-moz-box-shadow: -5px -5px 5px #888;
-        -webkit-box-shadow: -5px -5px 5px #888;
-        box-shadow: -5px -5px 5px #888;*/
+        border-radius: 50%;
+        &:hover{
+          -moz-box-shadow: 0px 0px 15px #888;
+          -webkit-box-shadow: 0px 0px 15px #888;
+          box-shadow: 0px 0px 15px #888;
+        }
+
       }
     }
     .endlist{
@@ -336,7 +343,7 @@ display: none;
     margin: 1.2rem 0 0 0!important;
   }
   .lstbar{
-    display: none;
+    display: none!important;
   }
   .leftblock{
     display: none!important;
@@ -345,7 +352,9 @@ display: none;
     padding-left: 1.2rem!important;
     padding-right: 1.2rem!important;
   }
-
+  .menudeal{
+    width: 100%!important;
+  }
   #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
     display: flex!important;
     flex-direction: column!important;
@@ -398,10 +407,55 @@ display: none;
         width: 100%!important;
       }
     }
+
+  }
+  .btnburger{
+    display: inline-block!important;
+    position: absolute;
+    width: 45px!important;
+    height: 45px!important;
+    font-size: 0;
+    top: auto;
+    right: 22.5px;
+    cursor: pointer;
+    /*background: blue;*/
+    .burger_span{
+      display: block;
+      width: 80%;
+      height: 5px;
+      margin: 7.5px auto 7.5px;
+      background: #000;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .pt5{
+    position: fixed;
+    top: 66px!important;
+    right: 0;
+    bottom: auto!important;
+    height: calc(100% - 66px);
+    width: 80%;
+    background: #ffffff;
+  }
+  .header__fstline{
+    height: 66px!important;
+  }
+  .svg-icon{
+    height: 45px!important;
+    width: 45px!important;
   }
 }
 
-@media (min-width: 898px) {
+@media (min-width: 888px) {
+  .pt5{
+    display: none!important;
+  }
+  .btnburger{
+    display: none!important;
+  }
   .menu-list{
     display: flex!important;
     justify-content: start!important;
@@ -418,6 +472,7 @@ display: none;
     flex-direction: row!important;
     align-items: center!important;
     position: fixed!important;
+    /*box-shadow: 5 3px 2px -2px gray;*/
     .lstbar_li{
       margin: 0 20px 0 0;
     }
@@ -435,6 +490,7 @@ display: none;
   }
   .maincontent{
     margin: 0 0 0 84.5px!important;
+    padding-top: 1.3rem;
   }
   .leftblock{
     display: none!important;
@@ -443,7 +499,9 @@ display: none;
     padding-left: 0!important;
     padding-right: 10%!important;
   }
-
+  .menudeal{
+    width: 50%!important;
+  }
   #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
     display: flex!important;
     flex-direction: column!important;
@@ -495,6 +553,13 @@ display: none;
       }
     }
   }
+  .header__fstline{
+    height: 101px!important;
+  }
+  .svg-icon{
+    height: 68px!important;
+    width: 68px!important;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -515,6 +580,9 @@ display: none;
   .rightblock {
     padding-left: 101px !important;
     padding-right: 10% !important;
+  }
+  .menudeal{
+    width: 50%!important;
   }
   #check1:checked ~ .blockabout_ul, #check2:checked ~ .blockabout_ul, #check3:checked ~ .blockabout_ul, #check4:checked ~ .blockabout_ul, #check5:checked ~ .blockabout_ul {
     display: flex !important;
