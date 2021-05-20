@@ -19,13 +19,14 @@ ul{
 }
 /*for 1024+ */
 .header{
+  z-index: 5;
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
   top: 0;
   position: sticky;
-  box-shadow: 0 3px 2px -2px gray;
+  border-bottom: 1px solid gray;
   .header__fstline{
     display: flex;
     flex-direction: row;
@@ -36,7 +37,7 @@ ul{
     padding-right: 16.5px;
     background: #ffffff;
     height: 101px;
-    font-size: 1.4rem;
+    font-size: 14px;
     .svg-icon{
       height: 68px;
       width: 68px;
@@ -45,7 +46,6 @@ ul{
     }
     .menu-list{
       height: 101px;
-      /*background: yellowgreen;*/
       list-style: none;
       display: flex;
       justify-content: start;
@@ -54,20 +54,16 @@ ul{
         >.header__fstline_linkdecoration {
           padding: 0;
           margin: 0 20px 0 0;
-          /*background: blue;*/
           font-weight: 400;
-
           line-height: 1.5;
           text-transform: uppercase;
-
         }
         :hover{
           color: mediumslateblue;
         }
       }
       .menu-list_li:nth-child(1) .header__fstline_linkdecoration{
-        /*background: red;*/
-        padding-bottom: 34px;
+        padding-bottom: 36px;
         border-bottom: 5px solid mediumslateblue;
       }
     }
@@ -76,7 +72,6 @@ ul{
       align-items: center;
       margin-left: auto;
       right: 0;
-      font-size: 1.3rem;
       .header__sndline_linkdecoration{
         margin: 0 0 0 15px;
         display: flex;
@@ -94,7 +89,6 @@ ul{
           overflow: visible;
           fill: currentColor;
         }
-
       }
       .btnsign{
         background: #ffffff;
@@ -103,11 +97,9 @@ ul{
         cursor: pointer;
         border-radius: 50px;
         padding: 7px 16px;
-        font-size: 1.3rem;
         line-height: .8;
-        margin: 0 12px 0 32px;
+        margin: 0 12px 0 22px;
         /*transition: all .2s ease;*/
-
       }
       .join{
         background: #000;
@@ -118,7 +110,6 @@ ul{
         border-radius: 50px;
         padding: 7px 16px;
         line-height: .8;
-        /*transition: all .2s ease;*/
       }
       .btnsign{
 
@@ -133,6 +124,7 @@ ul{
   display: none;
 }
 .lstbar{
+  font-size: 14px;
 display: none;
 }
 
@@ -258,12 +250,12 @@ display: none;
         .blockabout{
           display: flex;
           flex-direction: column;
-          width: 190px;
-          max-width: 190px;
+          width: 100%;
           font-size: 1.2rem;
           .h3{
             font-weight: 400;
             font-size: 1.2rem;
+            width: 100%;
           }
           .blockabout_ul{
             .blockabout_ul_li{
@@ -276,6 +268,11 @@ display: none;
           .blockaboutdiv{
             display: flex;
             justify-content: space-between;
+            .divspacebetween{
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+            }
           }
 
         }
@@ -335,7 +332,7 @@ display: none;
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   .menu-list,.sndnav{
     display: none!important;
   }
@@ -361,6 +358,9 @@ display: none;
   }
   .decorativeUnderlinebottom{
     flex-direction: column!important;
+  }
+  .blockabout{
+    width: 100%!important;
   }
   .blockaboutdiv{
     margin: 10px 0!important;
@@ -390,6 +390,7 @@ display: none;
   }
   .decorativeUnderlinebottom {
     margin-left: 16.5px!important;
+    margin-right: 17px!important;
   }
   .socials{
     margin-left: 1.2rem!important;
@@ -421,7 +422,7 @@ display: none;
     /*background: blue;*/
     .burger_span{
       display: block;
-      width: 80%;
+      width: 70%;
       height: 5px;
       margin: 7.5px auto 7.5px;
       background: #000;
@@ -429,16 +430,10 @@ display: none;
     &:last-child{
       margin-bottom: 0;
     }
-  }
-
-  .pt5{
-    position: fixed;
-    top: 66px!important;
-    right: 0;
-    bottom: auto!important;
-    height: calc(100% - 66px);
-    width: 80%;
-    background: #ffffff;
+    &:hover{
+      border-radius: 50%;
+      background: mediumslateblue;
+    }
   }
   .header__fstline{
     height: 66px!important;
@@ -447,10 +442,128 @@ display: none;
     height: 45px!important;
     width: 45px!important;
   }
+  #pt5{
+    .pt5_dv{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    #checkmenusec{
+      display: none;
+    }
+    *{
+      padding: 13px;
+      &.checkmenusec{
+      padding: 0;
+      }
+      .lblhund{
+        width: 100%;
+      }
+    }
+    display: none!important;
+    box-shadow: -5px 0 5px -5px #333;
+    width: 80%!important;
+    .findsnd_svg,hr{
+      padding: 0;
+    }
+    .btnsignsnd{
+      background: #ffffff;
+      display: inline-block;
+      border: 1px solid black;
+      cursor: pointer;
+      border-radius: 50px;
+      padding: 7px 16px;
+      line-height: .8;
+      margin: 0 12px 0 22px;
+      font-size: 1.9rem;
+      /*transition: all .2s ease;*/
+      &:hover{
+        background: mediumslateblue;
+      }
+    }
+    .joinsnd{
+      background: #000;
+      color: white;
+      display: inline-block;
+      border: 1px solid black;
+      cursor: pointer;
+      border-radius: 50px;
+      padding: 7px 16px;
+      line-height: .8;
+      &:hover{
+        background: mediumslateblue;
+      }
+    }
+    .findsnd{
+      display: flex;
+      align-items: center;
+      :hover{
+        color:mediumslateblue;
+      }
+      .findsnd_svg{
+        width: 32px;
+        height: 32px;
+        overflow: visible;
+        fill: currentColor;
+      }
+    }
+    hr{
+      margin:0 5%;
+    }
+  }
+  #checkburger:checked ~ .black{
+    display: flex !important;
+    position: fixed;
+    top: 66px !important;
+    left: 0;
+    /*bottom: auto !important;*/
+    height: calc(100% - 66px);
+    width: 100%;
+    background: #000000;
+    opacity: 38%;
+
+    /*border-top: 1px solid gray;*/
+    /* box-shadow: inset 0 2px 2px 2px gray; */
+  }
+  @keyframes move {
+    from{
+      margin-right: -80%;
+    }
+    to{
+      margin-right: 0%;
+    }
+  }
+  #checkburger:checked ~ #pt5{
+    display: flex!important;
+    flex-direction: column;
+    position: fixed;
+    top: 66px!important;
+    right: 0;
+    font-size: 1.9rem;
+    /*bottom: auto!important;*/
+    height: calc(100% - 66px);
+    background: #ffffff;
+    border-top: 1px solid gray;
+    animation: move 0.15s linear;
+    /*margin-right: -40%;*/
+    /*box-shadow: inset 0 2px 2px 2px gray;*/
+    .hr{
+      margin: 0 5% 0 5%
+    }
+  }
+  .h3modif{
+    display: block!important;
+  }
 }
 
-@media (min-width: 888px) {
+@media (min-width: 768px) {
   .pt5{
+    display: none!important;
+  }
+  #checkburger:checked ~ #pt5{
+    display: none!important;
+  }
+  #checkburger:checked ~ .black{
     display: none!important;
   }
   .btnburger{
@@ -466,7 +579,6 @@ display: none;
     top: 101px;
     height: 53px;
     width: 100%;
-    font-size: 16px;
     padding-left: 84.5px;
     display: flex!important;
     flex-direction: row!important;
@@ -504,11 +616,16 @@ display: none;
   }
   #check1:checked ~ .blockabout_ul,#check2:checked ~ .blockabout_ul,#check3:checked ~ .blockabout_ul,#check4:checked ~ .blockabout_ul,#check5:checked ~ .blockabout_ul{
     display: flex!important;
+
     flex-direction: column!important;
   }
   .decorativeUnderlinebottom{
     flex-direction: column!important;
     margin-left: 84.5px!important;
+    margin-right: 66px!important;
+  }
+  .blockabout{
+    width: 100%!important;
   }
   .blockaboutdiv{
     margin: 10px 0!important;
@@ -560,9 +677,21 @@ display: none;
     height: 68px!important;
     width: 68px!important;
   }
+  .h3modif{
+    display: block!important;
+  }
 }
 
 @media (min-width: 1024px) {
+  .pt5{
+    display: none!important;
+  }
+  #checkburger:checked ~ #pt5{
+    display: none!important;
+  }
+  #checkburger:checked ~ .black{
+    display: none!important;
+  }
   .menu-list {
     display: flex !important;
     justify-content: start !important;
@@ -614,6 +743,9 @@ display: none;
       padding: 0 1.6rem !important;
     }
   }
+  .blockabout{
+    width: 190px!important;
+  }
   .blockabout_ul {
     display: flex !important;
     flex-direction: column !important;
@@ -635,5 +767,8 @@ display: none;
         width: auto !important;
       }
     }
+  }
+  .h3modif{
+    display: none!important;
   }
 }
