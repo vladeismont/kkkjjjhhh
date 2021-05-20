@@ -452,8 +452,8 @@ display: none;
       display: none;
     }
     *{
-      padding: 13px;
-      &.checkmenusec{
+      padding: 16px;
+      &.checkmenusec,.findsnddv{
       padding: 0;
       }
       .lblhund{
@@ -472,9 +472,7 @@ display: none;
       border: 1px solid black;
       cursor: pointer;
       border-radius: 50px;
-      padding: 7px 16px;
       line-height: .8;
-      margin: 0 12px 0 22px;
       font-size: 1.9rem;
       /*transition: all .2s ease;*/
       &:hover{
@@ -488,7 +486,6 @@ display: none;
       border: 1px solid black;
       cursor: pointer;
       border-radius: 50px;
-      padding: 7px 16px;
       line-height: .8;
       &:hover{
         background: mediumslateblue;
