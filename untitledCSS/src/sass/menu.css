@@ -359,6 +359,12 @@ ul {
     height: 45px !important;
     width: 45px !important; }
 
+  #pt55 {
+    display: none !important; }
+
+  #checkmenusec {
+    display: none; }
+
   #pt5 {
     display: none !important;
     box-shadow: -5px 0 5px -5px #333;
@@ -367,8 +373,6 @@ ul {
       display: flex;
       width: 100%;
       justify-content: space-between; }
-    #pt5 #checkmenusec {
-      display: none; }
     #pt5 * {
       padding: 16px; }
       #pt5 *.checkmenusec, #pt5 * .findsnddv {
@@ -447,12 +451,29 @@ ul {
       margin: 0 5% 0 5%; }
 
   .h3modif {
-    display: block !important; } }
+    display: block !important; }
+
+  #checkmenusec:checked ~ #pt55 {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 66px !important;
+    right: 0;
+    width: 80%;
+    font-size: 1.9rem;
+    /*bottom: auto!important;*/
+    height: calc(100% - 66px);
+    background: #ffffff;
+    border-top: 1px solid gray;
+    animation: move 0.15s linear; } }
 @media (min-width: 768px) {
   .pt5 {
     display: none !important; }
 
-  #checkburger:checked ~ #pt5 {
+  #pt55 {
+    display: none !important; }
+
+  #checkburger:checked ~ #pt5, #checkburger:checked ~ #pt55 {
     display: none !important; }
 
   #checkburger:checked ~ .black {
@@ -565,7 +586,10 @@ ul {
   .pt5 {
     display: none !important; }
 
-  #checkburger:checked ~ #pt5 {
+  #pt55 {
+    display: none !important; }
+
+  #checkburger:checked ~ #pt5, #checkburger:checked ~ #pt55 {
     display: none !important; }
 
   #checkburger:checked ~ .black {
