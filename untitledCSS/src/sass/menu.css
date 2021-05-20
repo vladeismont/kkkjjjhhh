@@ -17,6 +17,9 @@ ul {
 #check1, #check2, #check3, #check4, #check5 {
   display: none; }
 
+#check1:checked ~ .blockaboutdiv .divspacebetween .h3modif {
+  transform: rotate(180deg); }
+
 /*for 1024+ */
 .header {
   z-index: 5;
@@ -453,7 +456,7 @@ ul {
   .h3modif {
     display: block !important; }
 
-  #checkmenusec:checked ~ #pt55 {
+  #checkburger:checked ~ #checkmenusec:checked ~ #pt55 {
     display: flex !important;
     flex-direction: column;
     position: fixed;
@@ -465,7 +468,16 @@ ul {
     height: calc(100% - 66px);
     background: #ffffff;
     border-top: 1px solid gray;
-    animation: move 0.15s linear; } }
+    animation: move 0.15s linear; }
+    #checkburger:checked ~ #checkmenusec:checked ~ #pt55 .pt55dv {
+      background: lightgrey;
+      display: flex;
+      padding: 16px; }
+      #checkburger:checked ~ #checkmenusec:checked ~ #pt55 .pt55dv .lblcnt {
+        text-align: center;
+        width: 100%; }
+    #checkburger:checked ~ #checkmenusec:checked ~ #pt55 .apad {
+      padding: 16px; } }
 @media (min-width: 768px) {
   .pt5 {
     display: none !important; }

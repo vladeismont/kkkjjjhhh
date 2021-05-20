@@ -17,6 +17,9 @@ ul{
 #check1,#check2,#check3,#check4,#check5{
   display: none;
 }
+#check1:checked ~ .blockaboutdiv .divspacebetween .h3modif{
+  transform: rotate(180deg);
+}
 /*for 1024+ */
 .header{
   z-index: 5;
@@ -555,7 +558,7 @@ display: none;
   .h3modif{
     display: block!important;
   }
-  #checkmenusec:checked ~ #pt55{
+  #checkburger:checked ~ #checkmenusec:checked ~ #pt55{
     display: flex!important;
     flex-direction: column;
     position: fixed;
@@ -568,6 +571,18 @@ display: none;
     background: #ffffff;
     border-top: 1px solid gray;
     animation: move 0.15s linear;
+    .pt55dv{
+      background: lightgrey;
+      display: flex;
+      padding: 16px;
+      .lblcnt{
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .apad{
+      padding: 16px;
+    }
   }
 }
 
