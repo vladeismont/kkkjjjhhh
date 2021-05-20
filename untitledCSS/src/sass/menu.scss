@@ -725,9 +725,21 @@ display: none;
   .h3modif{
     display: block!important;
   }
+  #checkburger:checked ~ #pt5{
+    display: none!important;
+  }
+  #checkburger:checked ~ #checkmenusec:checked ~ #pt55{
+    display: none!important;
+  }
 }
 
 @media (min-width: 1024px) {
+  #checkburger:checked ~ #pt5{
+    display: none!important;
+  }
+  #checkburger:checked ~ #checkmenusec:checked ~ #pt55{
+    display: none!important;
+  }
   .pt5{
     display: none!important;
   }
