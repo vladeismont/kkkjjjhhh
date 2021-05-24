@@ -130,9 +130,7 @@ ul{
   font-size: 14px;
 display: none;
 }
-.h4{
-  padding-top: 14px;
-}
+
 .footer{
   display: flex;
   align-items: center;
@@ -161,13 +159,13 @@ display: none;
 }
 
 .page{
-  margin-top: 0!important;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   .maincontent{
     display: flex;
     flex-direction: row;
-    margin: 1.2rem 0 0 85px;
+    margin: 0 0 0 85px;
     .leftblock{
       display: flex;
       flex-direction: column;
@@ -175,6 +173,7 @@ display: none;
       .h4{
         font-size: 1.3rem;
         font-weight: 600;
+        margin-top: 1.3rem;
       }
       .decorativemargin{
         margin: 15px 0 15px 0;
@@ -191,7 +190,7 @@ display: none;
       padding-left: 101px;
       padding-right: 10%;
       .h1{
-        padding-bottom: 1.3rem;
+        margin: 1.3rem 0;
       }
       .container{
         .drinks_decorativeUnderline{
@@ -342,7 +341,7 @@ display: none;
     display: none!important;
   }
   .maincontent{
-    margin: 1.2rem 0 0 0!important;
+    margin: 0!important;
   }
   .lstbar{
     display: none!important;
@@ -649,7 +648,6 @@ display: none;
   }
   .maincontent{
     margin: 0 0 0 85px!important;
-    padding-top: 1.3rem;
   }
   .leftblock{
     display: none!important;

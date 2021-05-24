@@ -111,9 +111,6 @@ ul {
   font-size: 14px;
   display: none; }
 
-.h4 {
-  padding-top: 14px; }
-
 .footer {
   display: flex;
   align-items: center;
@@ -136,20 +133,21 @@ ul {
       color: white; }
 
 .page {
-  margin-top: 0 !important;
+  margin-top: 0;
   display: flex;
   flex-direction: column; }
   .page .maincontent {
     display: flex;
     flex-direction: row;
-    margin: 1.2rem 0 0 85px; }
+    margin: 0 0 0 85px; }
     .page .maincontent .leftblock {
       display: flex;
       flex-direction: column;
       width: 165px; }
       .page .maincontent .leftblock .h4 {
         font-size: 1.3rem;
-        font-weight: 600; }
+        font-weight: 600;
+        margin-top: 1.3rem; }
       .page .maincontent .leftblock .decorativemargin {
         margin: 15px 0 15px 0; }
         .page .maincontent .leftblock .decorativemargin .linksdeal {
@@ -162,7 +160,7 @@ ul {
       padding-left: 101px;
       padding-right: 10%; }
       .page .maincontent .rightblock .h1 {
-        padding-bottom: 1.3rem; }
+        margin: 1.3rem 0; }
       .page .maincontent .rightblock .container .drinks_decorativeUnderline {
         width: 100%;
         padding-bottom: 7px;
@@ -271,7 +269,7 @@ ul {
     display: none !important; }
 
   .maincontent {
-    margin: 1.2rem 0 0 0 !important; }
+    margin: 0 !important; }
 
   .lstbar {
     display: none !important; }
@@ -534,8 +532,7 @@ ul {
     display: flex !important; }
 
   .maincontent {
-    margin: 0 0 0 85px !important;
-    padding-top: 1.3rem; }
+    margin: 0 0 0 85px !important; }
 
   .leftblock {
     display: none !important; }

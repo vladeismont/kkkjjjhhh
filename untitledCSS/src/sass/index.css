@@ -161,6 +161,7 @@ ul {
           align-items: center;
           margin-top: 32px; }
           .page .block .block_div .block_div_content .link .anker {
+            color: #1e3932;
             display: inline-block;
             background: none;
             border-radius: 50px;
