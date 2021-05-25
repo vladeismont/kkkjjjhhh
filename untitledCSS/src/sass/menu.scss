@@ -28,7 +28,8 @@ ul{
   display: flex;
   flex-direction: column;
   top: 0;
-  position: fixed;
+  width: 100%;
+  position: sticky;
   border-bottom: 1px solid gray;
   .header__fstline{
     display: flex;
